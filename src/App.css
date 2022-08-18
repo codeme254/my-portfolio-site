@@ -32,6 +32,30 @@ body{
   color: var(--color-white);
   background-color: var(--color-black);
 }
+
+.title-box{
+  text-align: center;
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.title__title-main{
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+.title__title-bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-size: 8rem;
+  text-transform: capitalize;
+  color: #333;
+  color: var(--color-black-light);
+  z-index: -1;
+  letter-spacing: 2px;
+}
 /*end of the basic reseting*/
 
 .header{
@@ -193,3 +217,107 @@ body{
   align-items: center;
 }
 /*end of the home stylings*/
+
+
+/* the about section */
+.about-section{
+  width: 80vw;
+  margin: 2rem auto;
+}
+
+.about__container{
+  display: flex;
+}
+
+.about__container >*{
+  /* border: 2px solid green; */
+  width: 50%;
+}
+
+.about__container-left--grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+}
+
+.about__container--image{
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 1rem  1rem 3px #333;
+  transition: all .5s ease;
+}
+
+.about__container--image:hover{
+  transform: scale(0.9);
+  box-shadow: 0  0 3px #333;
+}
+
+.about__container--right{
+  padding: 2rem 5rem;
+}
+
+.about__container--cover{
+  position: relative;
+}
+
+.about__abs{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  /* display: none; */
+  opacity: 0;
+  /* transition: all .5s ease-in-out; */
+}
+
+.show__about__abs{
+  /* display: block; */
+  opacity: 1;
+}
+
+.about__container--buttons{
+  margin-bottom: 2rem;
+}
+
+.about__container--button{
+  border: none;
+  outline: none;
+  padding: 1.5rem 2.5rem;
+  background-color: var(--color-primary);
+  margin-right: .4rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #222;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.about--text{
+  text-align: justify;
+}
+
+.about__container--tools{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 4rem;
+}
+
+.about__icon{
+  --size: 6rem;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.about__icon svg{
+  --size: 4rem;
+  width: var(--size);
+  height: var(--size);
+  fill: #111;
+}
+/* end of the about section */

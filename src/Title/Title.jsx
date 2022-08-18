@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const Title = (mainTitle, backTitle) => {
-	return(
-		<div>
-			<h2>{mainTitle}</h2>
-			<h2>{backTitle}</h2>
-		</div>
-	);
-}
+const Title = ({mainTitle, backTitle}) => {
+  return (
+    <div className="title-box">
+      <h2 className="title__title-main">{mainTitle}</h2>
+      <h2 className="title__title-bg">{backTitle}</h2>
+    </div>
+  );
+};
+
 export default Title;
