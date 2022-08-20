@@ -329,11 +329,11 @@ body {
 /* end of the about section */
 
 /* beginning of the project section */
-.project-section{
+.project-section {
   margin-top: 10rem;
 }
 
-.projects__container{
+.projects__container {
   padding: 5rem 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -341,12 +341,13 @@ body {
   justify-items: center;
 }
 
-.project-link-wrapper, .project-link-wrapper:visited{
+.project-link-wrapper,
+.project-link-wrapper:visited {
   text-decoration: none;
   color: var(--color-white);
 }
 
-.project{
+.project {
   width: 40rem;
   /* border: 1px solid red; */
   background-color: #343940;
@@ -354,12 +355,12 @@ body {
   overflow: hidden;
 }
 
-.project__image{
+.project__image {
   height: 30rem;
   position: relative;
 }
 
-.project__swipe-in-details{
+.project__swipe-in-details {
   position: absolute;
   top: 0;
   right: -120%;
@@ -369,63 +370,63 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, .2);
-  transition: all .3s ease-in;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in;
 }
 
-.project__title--black{
+.project__title--black {
   color: var(--color-black-light);
 }
 
-.project__links--top{
+.project__links--top {
   display: flex;
   justify-content: center;
 }
 
-.project__links--top>:last-child{
+.project__links--top > :last-child {
   margin-right: 0;
 }
 
-.project:hover .project__swipe-in-details{
+.project:hover .project__swipe-in-details {
   right: 0;
 }
 
-.project__image--img{
+.project__image--img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
 
-.project__body{
+.project__body {
   padding: 1.5rem;
 }
 
-.project__title{
+.project__title {
   font-size: 2.5rem;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Rubik Maze', sans-serif;
+  font-family: "Rubik Maze", sans-serif;
   margin-bottom: 1rem;
 }
 
-.project__body--description{
+.project__body--description {
   margin-bottom: 1.5rem;
 }
 
-.project__description{
+.project__description {
   font-size: 1.8rem;
   text-align: justify;
 }
 
-.project__body--links{
+.project__body--links {
   display: flex;
   justify-content: center;
   /* border: 2px solid white;
   padding: 1rem; */
 }
 
-.project__link{
+.project__link {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -441,23 +442,23 @@ body {
   overflow: hidden;
 }
 
-.project__link::after{
+.project__link::after {
   content: "";
   position: absolute;
   top: 0;
   left: -80rem;
   width: 50%;
   height: 100%;
-  background-color: rgba(255, 255, 255, .6);
+  background-color: rgba(255, 255, 255, 0.6);
   transform: skewX(-15deg);
   transition: all 3s ease;
 }
 
-.project__link:hover.project__link::after{
+.project__link:hover.project__link::after {
   transform: skewX(-15deg) translateX(10000%);
 }
 
-.project__link svg{
+.project__link svg {
   --size: 2.5rem;
   width: var(--size);
   height: var(--size);
@@ -467,11 +468,11 @@ body {
 /* ending of the project section */
 
 /* skills section */
-.skills-section{
+.skills-section {
   margin-top: 8rem;
 }
 
-.skills-container{
+.skills-container {
   padding: 3rem 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -480,7 +481,7 @@ body {
   row-gap: 3rem;
 }
 
-.skill{
+.skill {
   width: 35rem;
   background-color: var(--color-black-light);
   background-color: #222;
@@ -492,38 +493,40 @@ body {
   border-radius: 3px;
   box-shadow: 0 0 5px #ccc;
   position: relative;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 
-.skill::after, .skill::before{
-  content: '';
+.skill::after,
+.skill::before {
+  content: "";
   position: absolute;
   top: 0;
   width: 0;
   height: 3px;
   background-color: var(--color-primary);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.skill::after{
+.skill::after {
   right: 0;
 }
 
-.skill::before{
+.skill::before {
   left: 0;
   transition: all 1s ease;
 }
 
-.skill:hover::after, .skill:hover::before{
+.skill:hover::after,
+.skill:hover::before {
   width: 50%;
 }
 
-.skill:hover{
+.skill:hover {
   background-color: #555;
 }
 
-.skill__skill-name{
+.skill__skill-name {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -532,10 +535,10 @@ body {
   margin-bottom: 2rem;
 }
 
-.skill__skill-name::after{
-  content: '';
+.skill__skill-name::after {
+  content: "";
   position: absolute;
-  bottom: -.5rem;
+  bottom: -0.5rem;
   right: 50%;
   height: 2px;
   width: 40%;
@@ -544,20 +547,20 @@ body {
   border: 1px dashed;
 }
 
-.skill__tools{
+.skill__tools {
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
 }
 
-.skill__image{
+.skill__image {
   --size: 15rem;
   width: var(--size);
   height: var(--size);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.skill:hover .skill__image{
+.skill:hover .skill__image {
   transform: scale(0.95);
 }
 /* end ofskills section */
