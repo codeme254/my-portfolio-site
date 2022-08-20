@@ -12,8 +12,7 @@ const ResumeSection = () => {
           year="June 2022 - current"
           working="alx software engineering"
           institution="alx, ali, holberton"
-          descritption="The ALX Holberton Software Engineering programme is a 12-month(70h/week) immersive programme that engages technology enthusiasts and
-budding software engineers in a variety of programmes across in-demand tech disciplines to prepare them for a global career as a Full-Stack Developer."
+          descritption="The ALX Holberton Software Engineering programme is a 12-month(70h/week) immersive programme that engages technology enthusiasts and budding software engineers in a variety of programmes across in-demand tech disciplines to prepare them for a global career as a Full-Stack Developer."
         />
 
         <TimeCard

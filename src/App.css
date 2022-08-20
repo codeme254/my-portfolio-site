@@ -614,6 +614,20 @@ body {
   font-weight: bold;
   letter-spacing: 2.5px;
   margin-bottom: 2rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.time-card__institution::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--color-primary);
+  margin-right: 2rem;
+  border-radius: 5px;
 }
 
 .time-card__description {
@@ -622,3 +636,61 @@ body {
   letter-spacing: 1px;
 }
 /* endo of timeline/resume section */
+
+/* footer */
+.footer{
+  margin-bottom: 1.5rem;
+  margin-top: 5rem;
+  background-color: #111;
+  padding: 2rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text{
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: .6px;
+  /* margin-bottom: .5rem; */
+}
+
+.footer__text--link, .footer__text--link:visited{
+  text-decoration: none;
+  color: #444;
+  font-weight: 700;
+  padding: .5rem;
+  background-color: var(--color-primary);
+  border-radius: 100px;
+}
+
+.character{
+  font-size: 2.5rem;
+  color: orangered;
+}
+
+.social{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.social__link, .social__link:visited{
+  padding: 1.5rem;
+  background-color: var(--color-primary);
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.social__link svg{
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+  fill: var(--color-black-light);
+}
+/* end of footer */
