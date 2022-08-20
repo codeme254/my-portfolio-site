@@ -13,7 +13,7 @@ const Project = ({ image, title, description, liveLink, gitLink }) => {
           className="project__image--img"
         />
         <div className="project__swipe-in-details">
-        <h2 className="project__title project__title--black">{title}</h2>
+          <h2 className="project__title project__title--black">{title}</h2>
           <div className="project__links--top">
             <a
               href={gitLink || "https://github.com/codeme254"}

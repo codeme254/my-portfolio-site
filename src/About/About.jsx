@@ -102,7 +102,7 @@ const About = () => {
               <span className="about__icon">
                 <Sass />
               </span>
-			  <span className="about__icon">
+              <span className="about__icon">
                 <NodeIcon />
               </span>
             </div>
