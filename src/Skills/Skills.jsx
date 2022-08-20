@@ -56,8 +56,8 @@ const Skills = () => {
         />
         <Skill
           skillImage={staticWebSkillImg}
-          skillName="static web pages"
-          tools="HTML, CSS, gsap"
+          skillName="critical thinking"
+          tools="miro boards"
         />
       </div>
     </section>
