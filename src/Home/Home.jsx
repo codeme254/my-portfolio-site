@@ -12,7 +12,7 @@ const Home = () => {
 					I am <span>Dennis Otwoma</span>, a <span>Web Developer</span> welcome here.
 				</h1>
 				<div className="home__textbox--links">
-					<a className="home__textbox--link" download href={resume}><Download />resume</a>
+					<a className="home__textbox--link" download href={resume}><Download />download resume</a>
 					<a className="home__textbox--link" href="https://github.com/codeme254" target="_blank" rel="noreferrer"><Github />GitHub</a>
 					<a className="home__textbox--link" href="https://www.linkedin.com/in/otwoma/" target="_blank" rel="noreferrer"><LinkedIn />LinkedIn</a>
 				</div>
