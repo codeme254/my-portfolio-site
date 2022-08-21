@@ -28,8 +28,9 @@ html {
 }
 
 body {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   /*font-family: 'Rubik Maze', cursive;*/
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   color: var(--color-white);
   background-color: var(--color-black);
@@ -566,7 +567,7 @@ body {
 /* end ofskills section */
 
 /* timeline/resume section */
-.resume-section{
+.resume-section {
   margin-top: 8rem;
 }
 
@@ -574,6 +575,7 @@ body {
   padding: 2rem 8rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(55rem, 1fr));
+  justify-items: center;
   gap: 2rem;
 }
 
@@ -618,8 +620,8 @@ body {
   padding-left: 1rem;
 }
 
-.time-card__institution::before{
-  content: '';
+.time-card__institution::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -637,8 +639,138 @@ body {
 }
 /* endo of timeline/resume section */
 
+/* Friends section */
+.friends-section {
+  padding: 2rem;
+  margin: 5rem 0;
+}
+
+.friends--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  row-gap: 4rem;
+}
+
+.section-text {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.friend {
+  width: 40rem;
+  padding: 1.5rem;
+  background-color: var(--color-black-light);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.friend::after,
+.friend::before {
+  content: "";
+  position: absolute;
+  --size: 6rem;
+  width: var(--size);
+  height: var(--size);
+  background-color: rgba(34, 34, 34, 0.541);
+  z-index: 1;
+}
+
+.friend::before {
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  transform: translate(20%, 30%);
+}
+
+.friend::after {
+  top: 0;
+  left: 0;
+  transform: translate(-20%, -30%);
+}
+
+.friend__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.friend__name {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.friend__social > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.friend__social--link,
+.friend__social--link:visited {
+  --size: 5rem;
+  width: var(--size);
+  height: var(--size);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.friend__social--link svg {
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+  fill: var(--color-black-light);
+}
+
+.friend__body {
+  display: flex;
+  align-items: center;
+}
+
+.friend__body--image {
+  margin-right: 0.8rem;
+}
+
+.friend__body--image svg,
+.friend__body--image--img {
+  --size: 6rem;
+  width: var(--size);
+  height: var(--size);
+  min-width: var(--size);
+  max-width: var(--size);
+  min-height: var(--size);
+  max-height: var(--size);
+}
+
+.friend__description {
+  font-size: 1.7rem;
+  text-align: justify;
+  font-weight: 500;
+  z-index: 3;
+}
+
+.friend__body--image--img {
+  border-radius: 50%;
+}
+
+.friend__body--image svg {
+  fill: var(--color-white);
+}
+/* End of Friends section */
+
 /* footer */
-.footer{
+.footer {
   margin-bottom: 1.5rem;
   margin-top: 5rem;
   background-color: #111;
@@ -650,34 +782,36 @@ body {
   align-items: center;
 }
 
-.footer__text{
+.footer__text {
   font-size: 1.7rem;
   font-weight: 400;
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
   /* margin-bottom: .5rem; */
 }
 
-.footer__text--link, .footer__text--link:visited{
+.footer__text--link,
+.footer__text--link:visited {
   text-decoration: none;
   color: #444;
   font-weight: 700;
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: var(--color-primary);
   border-radius: 100px;
 }
 
-.character{
+.character {
   font-size: 2.5rem;
   color: orangered;
 }
 
-.social{
+.social {
   display: flex;
   align-items: center;
   margin-top: 1rem;
 }
 
-.social__link, .social__link:visited{
+.social__link,
+.social__link:visited {
   padding: 1.5rem;
   background-color: var(--color-primary);
   margin-right: 1rem;
@@ -687,7 +821,7 @@ body {
   border-radius: 5px;
 }
 
-.social__link svg{
+.social__link svg {
   --size: 3rem;
   width: var(--size);
   height: var(--size);
