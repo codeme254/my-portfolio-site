@@ -637,7 +637,173 @@ body {
   line-height: 1.8;
   letter-spacing: 1px;
 }
-/* endo of timeline/resume section */
+/* end of timeline/resume section */
+
+/* Repos and connection section */
+.repos-connect-section {
+  margin: 3rem;
+  padding: 1rem 5rem;
+
+  display: flex;
+}
+
+.repos {
+  width: 60%;
+  margin-right: 5%;
+}
+
+.section__title-sub {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.repos__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  row-gap: 5rem;
+  margin-top: 6rem;
+}
+
+.repo {
+  background-color: var(--color-black-light);
+  width: 30rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--color-primary);
+  position: relative;
+}
+
+.repo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffbd3925;
+  border: 2px solid var(--color-primary);
+  /* background-color: var(--color-black-light); */
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 50%, 0 100%, 0 0);
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.repo__icon {
+  --size: 4rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  box-sizing: content-box;
+  border: 3px solid var(--color-white);
+  z-index: 5;
+}
+
+.repo__icon svg {
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+}
+
+.repo__name {
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.repo__name::after {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  right: 50%;
+  width: 60%;
+  height: 2px;
+  background-color: var(--color-white);
+  transform: translateX(50%);
+  transition: all 0.5s ease;
+}
+
+.repo:hover .repo__name::after {
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+.repo__description {
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  z-index: 2;
+}
+
+.repo__link,
+.repo__link:visited {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-primary);
+  color: #222;
+  font-weight: bold;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  z-index: 2;
+}
+
+.repo__link svg {
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+  fill: currentColor;
+  margin-left: 1.5rem;
+}
+
+.section-connect-image{
+  margin: 5rem auto;
+  margin-bottom: 1rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #111;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.social svg {
+  --size: 4rem;
+  width: var(--size);
+  height: var(-size);
+  fill: var(--color-white);
+  margin-right: 2rem;
+}
+
+.social-__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+/* End of Repos and connection section */
 
 /* Friends section */
 .friends-section {
@@ -804,7 +970,7 @@ body {
   color: orangered;
 }
 
-.social {
+.footer-social {
   display: flex;
   align-items: center;
   margin-top: 1rem;

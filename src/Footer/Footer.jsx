@@ -18,7 +18,7 @@ const Footer = () => {
         </span>
       </p>
 
-      <div className="social">
+      <div className="footer-social">
         <a
           href="https://www.github.com/codeme254"
           target="_blank"

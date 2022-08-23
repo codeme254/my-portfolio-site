@@ -14,7 +14,8 @@ import {
 // import img1 from '../Assets/Images/img1.jpg';
 // import img2 from '../Assets/Images/img2.jpg';
 // import img3 from '../Assets/Images/img3.jpg';
-import img4 from "../Assets/Images/img4.jpg";
+// import img4 from "../Assets/Images/img4.jpg";
+import logo from "../Assets/Images/logo-main.png";
 
 const About = () => {
   const mainContainerRef = useRef(null);
@@ -42,7 +43,7 @@ const About = () => {
 
       <div className="about__container">
         <div className="about__container--left">
-          <img src={img4} alt="laptop" className="about__container--image" />
+          <img src={logo} alt="laptop" className="about__container--image" />
         </div>
         <div className="about__container--right">
           <div className="about__container--buttons">
@@ -65,13 +66,16 @@ const About = () => {
           <div className="about__container--cover" ref={mainContainerRef}>
             <div className="about__container--text" data-child="about">
               <p className="about--text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam praesentium aperiam accusantium iure quae asperiores
-                laborum, modi non voluptate atque quasi rerum aliquam
-                necessitatibus facilis. Inventore expedita aliquam facilis ipsum
-                ducimus iure consectetur ratione enim illum nam. Necessitatibus
-                tenetur maiores veniam cum impedit amet quaerat, voluptas
-                molestias, deleniti ab doloremque!
+                My name is Otwoma Dennis or you can call me Zaph if you want, I
+                am a frontend web developer with ReactJS, CSS, Material UI and
+                styled components, I also do backend web development with
+                NodeJS, express, MongoDB, Mongoose and a bit of sql, I am also
+                good in Bash Scripting and the Linux Command Line, I however put
+                my full focus in developing user friendly and responsive
+                webpages keepable of converting in any business whatsoever. I
+                take pride in what I do, I am a team player and I pay attention
+                to details in any solution am working on. More information about
+                me is in this website.
               </p>
             </div>
             <div

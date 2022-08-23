@@ -5,6 +5,7 @@ import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import ResumeSection from "./Resume/Resume";
+import ReposConnect from "./ReposConnect/ReposConnect";
 import Friends from "./Friends/Friends";
 import Footer from "./Footer/Footer";
 
@@ -17,6 +18,7 @@ function App() {
       <Projects />
       <Skills />
       <ResumeSection />
+      <ReposConnect />
       <Friends />
       <Footer />
     </div>
