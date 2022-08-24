@@ -56,7 +56,7 @@ const ReposConnect = () => {
             </div>
             <div className="social">
               <Github />
-              <p className="social-__text">https://github.com/codeme254</p>
+              <p className="social-__text"> https://github.com/codeme254</p>
             </div>
             <div className="social">
               <Facebook />
