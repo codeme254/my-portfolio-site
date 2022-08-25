@@ -18,12 +18,16 @@ const Project = ({ image, title, description, liveLink, gitLink }) => {
             <a
               href={gitLink || "https://github.com/codeme254"}
               className="project__link"
+              target="_blank"
+              rel="noreferrer"
             >
               <Github /> visit codebase
             </a>
             <a
               href={liveLink || "https://github.com/codeme254"}
               className="project__link"
+              target="_blank"
+              rel="noreferrer"
             >
               <Fire /> live project
             </a>
@@ -39,12 +43,16 @@ const Project = ({ image, title, description, liveLink, gitLink }) => {
           <a
             href={gitLink || "https://github.com/codeme254"}
             className="project__link"
+            target="_blank"
+            rel="noreferrer"
           >
             <Github /> codebase
           </a>
           <a
             href={liveLink || "https://github.com/codeme254"}
             className="project__link"
+            target="_blank"
+            rel="noreferrer"
           >
             <Fire /> visit
           </a>

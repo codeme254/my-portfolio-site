@@ -248,6 +248,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  display: none;
 }
 
 .hamburger >*:not(:last-child){
@@ -337,6 +338,10 @@ body {
   .home__image img {
     height: 60vh;
     border-radius: 50%;
+  }
+
+  .hamburger{
+    display: flex;
   }
 }
 /*end of the home stylings*/
