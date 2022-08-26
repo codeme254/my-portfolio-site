@@ -27,7 +27,7 @@ const Footer = () => {
         >
           <Github />
         </a>
-        <a href="/" className="social__link" target="_blank" rel="noreferrer">
+        <a href="https://twitter.com/Zaphenath254" className="social__link" target="_blank" rel="noreferrer">
           <Twitter />
         </a>
         <a
@@ -38,7 +38,7 @@ const Footer = () => {
         >
           <LinkedIn />
         </a>
-        <a href="/" className="social__link" target="_blank" rel="noreferrer">
+        <a href="https://www.facebook.com/zaphenath.paneah.522" className="social__link" target="_blank" rel="noreferrer">
           <Facebook />
         </a>
       </div>

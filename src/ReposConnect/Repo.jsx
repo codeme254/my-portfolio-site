@@ -9,7 +9,7 @@ const Repo = ({repoName, description, link}) => {
             </span>
             <h3 className="repo__name">{repoName}</h3>
             <p className="repo__description">{description}</p>
-            <a href={link} className="repo__link">visit repo <ArrowRight /></a>
+            <a href={link} className="repo__link" target="_blank" rel="noreferrer">visit repo <ArrowRight /></a>
         </div>
     )
 }

@@ -41,6 +41,11 @@ body {
   background-color: var(--color-black);
 }
 
+.web-wrapper{
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 .title-box {
   text-align: center;
   position: relative;
@@ -874,6 +879,7 @@ body {
 
 .repo {
   background-color: var(--color-black-light);
+  height: max-content;
   width: 30rem;
   padding: 1rem;
   display: flex;
