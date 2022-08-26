@@ -11,7 +11,7 @@ import Footer from "./Footer/Footer";
 
 function App() {
   return (
-    <main className="App">
+    <div className="web-wrapper">
       <Header />
       <Home />
       <About />
@@ -21,7 +21,7 @@ function App() {
       <ReposConnect />
       <Friends />
       <Footer />
-    </main>
+    </div>
   );
 }
 

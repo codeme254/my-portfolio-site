@@ -39,10 +39,11 @@ body {
   font-size: 1.5rem;
   color: var(--color-white);
   background-color: var(--color-black);
+
 }
 
 .web-wrapper{
-  max-width: 1800px;
+  max-width: 1500px!important;
   margin: 0 auto;
 }
 
@@ -70,7 +71,7 @@ body {
   letter-spacing: 2px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .title__title-bg {
     font-size: 5rem;
   }
@@ -268,7 +269,7 @@ body {
   border-radius: 100px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .header{
     padding: 1rem;
     position: relative;
@@ -353,7 +354,7 @@ body {
 
 /* the about section */
 .about-section {
-  width: 80vw;
+  width: 80%;
   margin: 2rem auto;
   margin-top: 10rem;
 }
@@ -362,13 +363,15 @@ body {
   display: flex;
 }
 
-.about__container > * {
-  /* border: 2px solid green; */
+.about__container--left, .about__container--right {
+   /*border: 2px solid green; */
   width: 50%;
 }
 
 .about__container--image {
   width: 100%;
+  max-width: 100%;
+  display: block;
   border-radius: 4px;
   box-shadow: 1rem 1rem 3px #333;
   transition: all 0.5s ease;
@@ -446,7 +449,7 @@ body {
   fill: #111;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .about-section {
     width: 98vw;
   }
@@ -1014,7 +1017,7 @@ body {
   letter-spacing: 3px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .repos-connect-section {
     padding: 1rem;
     flex-direction: column;
