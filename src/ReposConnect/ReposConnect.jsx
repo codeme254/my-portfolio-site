@@ -13,7 +13,7 @@ import {
 
 const ReposConnect = () => {
   return (
-    <section className="repos-connect-section">
+    <section className="repos-connect-section" id="repos-contact">
       <div className="repos repos-connect__side">
         <h2 className="section__title-sub">my favorite github repos</h2>
         <div className="repos__container">

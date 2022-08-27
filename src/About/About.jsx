@@ -38,7 +38,7 @@ const About = () => {
     });
   };
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <Title mainTitle="about me" backTitle="about" />
 
       <div className="about__container">

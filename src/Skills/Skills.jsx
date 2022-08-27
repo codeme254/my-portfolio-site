@@ -11,7 +11,7 @@ import staticWebSkillImg from "../Assets/Images/static-web-app.svg";
 
 const Skills = () => {
   return (
-    <section className="skills-section">
+    <section className="skills-section" id="skills">
       <Title mainTitle="my skills" backTitle="skills" />
       <div className="skills-container">
         <Skill

@@ -5,7 +5,7 @@ import resume from "../Assets/Documents/otwoma-dennis-resume.pdf";
 import { LinkedIn, Github, Download } from "../Icons/Icons";
 const Home = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div className="home__textbox home__flex">
         <p className="home__textbox--txt-small">Hello!</p>
         <h1 className="home__textbox--txt-main">

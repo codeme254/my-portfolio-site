@@ -4,7 +4,7 @@ import TimeCard from "./TimeCard";
 
 const ResumeSection = () => {
   return (
-    <section className="resume-section">
+    <section className="resume-section" id="resume">
       <Title mainTitle="resume" backTitle="mini-timeline" />
 
       <div className="time-cards__container">

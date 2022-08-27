@@ -16,13 +16,15 @@ const Header = () => {
 
 			<nav className="header__nav" ref = {navRef}>
 				<ol className="header__nav--list">
-					<li className="header__nav--list-item"> <a href="/">home</a> </li>
-					<li className="header__nav--list-item"> <a href="/">about</a> </li>
-					<li className="header__nav--list-item"> <a href="/">resume</a> </li>
-					<li className="header__nav--list-item"> <a href="/">services</a> </li>
-					<li className="header__nav--list-item"> <a href="/">skills</a> </li>
-					<li className="header__nav--list-item"> <a href="/">my blog</a> </li>
-					<li className="header__nav--list-item"> <a href="/">contact me</a> </li>
+					<li className="header__nav--list-item"> <a href="#home">home</a> </li>
+					<li className="header__nav--list-item"> <a href="#about">about</a> </li>
+					<li className="header__nav--list-item"> <a href="#projects">projects</a> </li>
+					<li className="header__nav--list-item"> <a href="#skills">skills</a> </li>
+					<li className="header__nav--list-item"> <a href="#resume">resume</a> </li>
+					<li className="header__nav--list-item"> <a href="#repos-contact">contact me</a> </li>
+					<li className="header__nav--list-item"> <a href="#repos-contact">best repos</a> </li>
+					<li className="header__nav--list-item"> <a href="#influencers">my influencers</a> </li>
+
 				</ol>
 			</nav>
 			<button className="hamburger" onClick = {handleClick}>

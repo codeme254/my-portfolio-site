@@ -11,7 +11,7 @@ import zana from "../Assets/Images/zana-sc.png";
 
 const Projects = () => {
   return (
-    <section className="project-section">
+    <section className="project-section" id="projects">
       <Title mainTitle="My projects" backTitle="projects" />
 
       <div className="projects__container">

@@ -12,7 +12,7 @@ import omuok from "../Assets/Images/omuok.jpeg";
 
 const Friends = () => {
   return (
-    <section className="friends-section">
+    <section className="friends-section" id="influencers">
       <Title mainTitle="friends" backTitle="my career influence" />
       <p className="section-text">
         These are the most influential people in my coding career, there are of
